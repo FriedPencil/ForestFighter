@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:background="@drawable/background">
+
+	<com.example.forestfighter.GameView
+		android:id="@+id/mygameview"
+		android:layout_width ="1000px"
+		android:layout_height="wrap_content"
+		/>
+	<TextView
+		android:id="@+id/black"
+		android:layout_width ="55px"
+		android:layout_height="55px"
+		android:layout_toRightOf="@id/mygameview"
+		/>
+	<ImageButton
+		android:id="@+id/left"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/left"
+		android:layout_alignTop="@+id/attack"
+		android:layout_alignLeft="@+id/black3"
+		android:background="#000000"/>
+
+	<ImageButton
+		android:id="@+id/up"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/up"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/left"
+		android:background="#000000"/>
+	<ImageButton
+		android:id="@+id/attack"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/attack"
+		android:layout_toRightOf="@id/left"
+		android:layout_below="@id/up"
+		android:background="#000000"
+		/>
+	<TextView
+		android:id="@+id/black2"
+		android:layout_width ="55px"
+		android:layout_height="55px"
+		android:layout_toRightOf="@id/up"
+
+		/>
+	<ImageButton
+		android:id="@+id/right"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/right"
+		android:layout_below="@+id/up"
+		android:layout_toRightOf="@+id/up"
+		android:background="#000000"/>
+	<TextView
+		android:id="@+id/black3"
+		android:layout_width ="55px"
+		android:layout_height="55px"
+		android:layout_below="@id/left"
+		android:layout_toRightOf="@id/mygameview"
+		/>
+	<ImageButton
+		android:id="@+id/down"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/down"
+		android:layout_below="@+id/attack"
+		android:layout_toRightOf="@+id/left"
+		android:background="#000000"/>
+	<TextView
+		android:id="@+id/black5"
+		android:layout_width ="15px"
+		android:layout_height="15px"
+		android:layout_below="@id/black3"
+		android:layout_toRightOf="@id/mygameview"
+		/>
+	<TextView
+		android:id="@+id/info"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/down"
+		android:layout_toRightOf="@id/black5"
+		android:textColor ="#000000"
+		/>
+
+	<TextView
+		android:id="@+id/black6"
+		android:layout_width ="15px"
+		android:layout_height="15px"
+		android:layout_below="@id/info"
+		android:layout_toRightOf="@id/mygameview"
+		/>
+
+	<ImageButton
+		android:id="@+id/tip"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/tip"
+		android:layout_below="@id/info"
+		android:layout_toRightOf="@id/black6"
+		android:background="#000000"
+		/>
+	<ImageButton
+		android:id="@+id/back"
+		android:layout_width ="wrap_content"
+		android:layout_height="wrap_content"
+		android:src = "@drawable/back"
+		android:layout_below="@+id/info"
+		android:layout_toRightOf="@+id/tip"
+		android:background="#000000"/>
+</RelativeLayout>

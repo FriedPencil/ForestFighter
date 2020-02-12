@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 23
     buildToolsVersion "24.0.0"
@@ -10,6 +9,12 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        jackOptions.enabled = true
+    }
+    compileOptions{
+        encoding = "utf-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
